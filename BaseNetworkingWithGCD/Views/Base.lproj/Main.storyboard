@@ -54,6 +54,17 @@
                                     <action selector="dogeDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9J-rm-ghh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quw-9L-MaO">
+                                <rect key="frame" x="87" y="554" width="240" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="Смена цвета этой кнопки. Для ожидания кота">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColorOfDoNothingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2AO-pG-Ouh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,14 +75,19 @@
                             <constraint firstItem="weg-7W-XBU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Zr-M6-fvT"/>
                             <constraint firstItem="eda-2l-di5" firstAttribute="height" secondItem="lMO-Qh-pCw" secondAttribute="height" id="Drd-v7-3l5"/>
                             <constraint firstItem="4ww-Vd-TfW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jd2-Ob-n7F"/>
+                            <constraint firstItem="Quw-9L-MaO" firstAttribute="width" secondItem="lMO-Qh-pCw" secondAttribute="width" id="Kkn-tM-3O3"/>
+                            <constraint firstItem="Quw-9L-MaO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M6b-re-RMc"/>
                             <constraint firstItem="lMO-Qh-pCw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V65-Td-Lng"/>
+                            <constraint firstItem="Quw-9L-MaO" firstAttribute="height" secondItem="lMO-Qh-pCw" secondAttribute="height" id="WXl-Pt-DZv"/>
                             <constraint firstItem="eda-2l-di5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edC-Zx-FLz"/>
+                            <constraint firstItem="Quw-9L-MaO" firstAttribute="top" secondItem="lMO-Qh-pCw" secondAttribute="bottom" constant="20" id="hWb-Lv-4fS"/>
                             <constraint firstItem="lMO-Qh-pCw" firstAttribute="width" secondItem="weg-7W-XBU" secondAttribute="width" id="ibZ-Is-o9d"/>
                             <constraint firstItem="weg-7W-XBU" firstAttribute="top" secondItem="4ww-Vd-TfW" secondAttribute="bottom" constant="64.666666666666671" id="pVz-fR-uEt"/>
                             <constraint firstItem="lMO-Qh-pCw" firstAttribute="top" secondItem="eda-2l-di5" secondAttribute="bottom" constant="23" id="ts6-sL-0Ws"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="doNothingButton" destination="Quw-9L-MaO" id="MWO-lV-rcB"/>
                         <outlet property="imageViewForAnimal" destination="weg-7W-XBU" id="13t-ZY-XRa"/>
                     </connections>
                 </viewController>
@@ -93,6 +109,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
